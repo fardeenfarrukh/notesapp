@@ -5,7 +5,7 @@ frontend:
     preBuild:
       commands:
         - npm ci --cache .npm --prefer-offline
-        - npm install --no-save --package-lock=false "@rollup/rollup-linux-x64-gnu@$(node -p \"require('./node_modules/rollup/package.json').version\")"
+        - npm install --no-save --package-lock=false @rollup/rollup-linux-x64-gnu
     build:
       commands:
         - npm run build
